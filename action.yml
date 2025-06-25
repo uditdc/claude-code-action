@@ -110,7 +110,7 @@ runs:
     - name: Run Claude Code
       id: claude-code
       if: steps.prepare.outputs.contains_trigger == 'true'
-      uses: uditdc/claude-code-base-action@ba0557c14198bf2fbafbfe80932dde39e574a14c # v0.0.26
+      uses: uditdc/claude-code-base-action@1f69540070a48bebc0a0a072fcf14020a8380fbc # edge
       with:
         prompt_file: ${{ runner.temp }}/claude-prompts/claude-prompt.txt
         allowed_tools: ${{ env.ALLOWED_TOOLS }}
